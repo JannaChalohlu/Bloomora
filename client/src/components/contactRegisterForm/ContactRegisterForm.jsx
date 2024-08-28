@@ -22,7 +22,7 @@ function ContactRegisterForm() {
 
   const handleSubmit = async (values) => {
     try {
-      await fetch("https://formspree.io/f/mgejprbd", {
+      await fetch("https://formspree.io/f/xzzporwj", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -30,7 +30,7 @@ function ContactRegisterForm() {
         body: JSON.stringify(values),
       });
     } catch (error) {
-      console.error("Form gönderimi sırasında hata:", error);
+      console.error(error);
     }
   };
 

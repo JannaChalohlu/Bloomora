@@ -47,7 +47,7 @@ function WeddingInquiry() {
         <h1>{t("weddingInquiry.header1")}</h1>
       </div>
       <form
-        action="https://formspree.io/f/mgejprbd"
+        action="https://formspree.io/f/xzzporwj"
         method="POST"
       >
         <div className="field">
