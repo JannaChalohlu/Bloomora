@@ -31,7 +31,7 @@ app.use(
 );
 app.use(cookieParser());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "client/build"))); //? specify the path for our frontend (current directory + path we want to get in) // deploy-starter/frontend/dist
+app.use(express.static(path.join(__dirname, "client/dist"))); //? specify the path for our frontend (current directory + path we want to get in) // deploy-starter/frontend/dist
 
 app.use("/api/auth", authRouter);
 app.use("/api/product", productRouter);
