@@ -8,6 +8,7 @@ import { GiReturnArrow } from "react-icons/gi";
 import { RiSecurePaymentLine } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
 import { useAlert } from "../../context/alertContext";
+import { loadStripe } from "@stripe/stripe-js";
 
 function Cart() {
   const { t } = useTranslation();
@@ -111,6 +112,7 @@ function Cart() {
   };
 
   async function createStripeCheckoutSession() {
+    const stripe = await loadStripe(import.meta.env.VITE_STRIPE);
     try {
       const response = await fetch(
         `${import.meta.env.VITE_API}/order/createStripeCheckoutSession/${

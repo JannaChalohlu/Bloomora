@@ -17,6 +17,7 @@
     "@mui/material": "^6.0.0-beta.3",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "@mui/x-date-pickers": "^7.11.0",
+    "@stripe/stripe-js": "^4.4.0",
     "date-fns": "^3.6.0",
     "formik": "^2.4.6",
     "i18next": "^23.12.2",
