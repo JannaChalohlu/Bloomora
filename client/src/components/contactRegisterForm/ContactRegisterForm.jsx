@@ -22,7 +22,7 @@ function ContactRegisterForm() {
 
   const handleSubmit = async (values) => {
     try {
-      await fetch("https://formspree.io/f/xzzporwj", {
+      await fetch("https://formspree.io/f/mgejprbd", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
