@@ -127,6 +127,10 @@ function Cart() {
             checkoutProducts: cart.map((product) => ({
               id: product.productId?._id,
               quantity: product.quantity,
+              price: product.productPrice,
+              name: product.productName,
+              description: product.productName,
+              image: product.productImage,
             })),
           }),
         }
