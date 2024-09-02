@@ -25,7 +25,7 @@ export async function createStripeCheckoutSession(req, res) {
     success_url:
       //# CODE ADDED HERE
       process.env.NODE_ENV === "production"
-        ? `https://bloomora-q0yb.onrender.com/success`
+        ? `https://bloomora-q0yb.onrender.com/success?checkoutProducts=${JSON.stringify(checkoutProducts)}`
         : "http://localhost:5173/success", //! http://localhost:5173/success to run on local
     cancel_url:
       process.env.NODE_ENV === "production"

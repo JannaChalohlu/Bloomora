@@ -46,7 +46,7 @@ app.use("/api/user", userRouter);
 // });
 
 app.get("*", (req, res) => {
-  res.sendFile(__dirname + "/client/dist");
+  res.sendFile(__dirname + "client/dist");
 });
 
 const port = process.env.PORT || 5100;
